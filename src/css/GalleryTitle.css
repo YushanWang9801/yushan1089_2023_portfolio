@@ -18,9 +18,8 @@
 }
 
 .GalleryTitle span{
-    color: #c6c6c6;
+    color: var(--secondary);
     font-size: 1.6rem;
-    text-shadow: .5px .5px var(--primary);
     justify-content: center;
     display: flex;
     margin-bottom: 30px;

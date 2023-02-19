@@ -19,21 +19,16 @@
     border-radius: 10px;
 }
 
-
-
-
 /* Form  */
 .form {
     font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
                     Roboto, Helvetica, Arial, sans-serif;
-
     color: var(--primary);
 
     width: 600px;
     margin-left: 30px;
-
     padding-left: 20px;
-    
+
     display: -webkit-box;
     display: -ms-flexbox;
 }
@@ -50,6 +45,8 @@
     letter-spacing: 2px;
 }
 
+.form h2:hover { color: var(--secondary);}
+
 .form .form-first-row{
     display: flex;
     flex: 0 0 auto;
@@ -62,8 +59,8 @@
 .form .form-control{
     font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
                     Roboto, Helvetica, Arial, sans-serif;
-    background-color: #fff;
-    color: #111111;
+    background-color: var(--background);
+    color: var(--secondary);
     border: 2px solid var(--primary);
     border-radius:  8px;
     padding-left:   10px;
@@ -72,6 +69,8 @@
 
     font-size: 15px;
 }
+
+
 
 #name {
     width: 200px;
@@ -93,7 +92,7 @@
 }
 
 .form-fourth-row .sendButton {
-    background-color: #111111;
+    background-color: var(--background);
     color: var(--primary);
     padding: 10px 10px;
     margin-top: 20px;
@@ -102,12 +101,14 @@
 
     font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
                     Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 15px;
+    letter-spacing: 0.05em;
+    border: 15px var(--primary);
     box-shadow: 0px 0px 5px var(--primary);
 }
 
 .form-fourth-row .sendButton:hover {
     background-color: var(--primary);
-    color: #fff;
+    color: var(--accent);
 }

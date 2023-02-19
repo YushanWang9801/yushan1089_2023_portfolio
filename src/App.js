@@ -16,9 +16,9 @@ function App() {
   return (
     <div className="App">
       <HeaderWang />
-      {/* <GalleryTitle /> */}
-      {/* <Gallery /> */}
-      {/* <Contact /> */}
+      <GalleryTitle />
+      {/* <Gallery />  */}
+      <Contact />
       <Footer />
     </div>
   );

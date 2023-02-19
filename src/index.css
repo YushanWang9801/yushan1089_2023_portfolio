@@ -22,6 +22,7 @@ code {
   --secondary: #c6c6c6;
   --primary: #00A19C;
   --error: #7d1236;
+  --accent: #ffffff;
 
   --merc-silver: #c6c6c6;
   --merc_red:  #7d1236;
@@ -32,6 +33,7 @@ code {
   --secondary: #3d3d3d;
   --primary: #00A19C;
   --error: #7d1236;
+  --accent: #111111;
 }
 
 .App{

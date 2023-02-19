@@ -20,7 +20,6 @@ const HeaderWang = ({ setDarkMode }) => {
 
 
     return (
-        <div >
         <div className="HeaderWang">
             <h1>YushanWang9801</h1>    
             <nav className="navbar">
@@ -29,18 +28,16 @@ const HeaderWang = ({ setDarkMode }) => {
                 <a href="#">Blogs</a>
                 <a href="#">Gallery</a>
             </nav>
-        </div>
-
-        <div className='dark_mode'>
-        <input
-            className='dark_mode_input'
-            type='checkbox'
-            id='darkmode-toggle'
-            onChange={toggleTheme}
-        />
-        <label className='dark_mode_label' for='darkmode-toggle'>
-        </label>
-        </div>
+            <div className='dark_mode'>
+                <input
+                    className='dark_mode_input'
+                    type='checkbox'
+                    id='darkmode-toggle'
+                    onChange={toggleTheme}
+                />
+                <label className='dark_mode_label' for='darkmode-toggle'>
+                </label>
+            </div>
         </div>
     );
 }
