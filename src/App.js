@@ -10,8 +10,9 @@ import Contact from './comp/Contact';
 
 import {useState} from 'react';
 
-function App() {
 
+function App() {
+  
   return (
     <div className="App">
       <HeaderWang />
