@@ -1,0 +1,19 @@
+.ProjectTitle {
+    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+                    Roboto, Helvetica, Arial, sans-serif;
+}
+
+.ProjectTitle h2{
+    margin-left: 30px;
+    margin-top: 60px;
+    font-size: 2.6rem;
+    color: var(--primary);
+    margin-bottom: 30px;
+    line-height: 1.05em;
+    font-weight: 100;
+    letter-spacing: normal;
+}
+
+.ProjectTitle h2:hover{
+    color: var(--secondary);
+}

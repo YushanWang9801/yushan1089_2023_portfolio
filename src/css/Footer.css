@@ -35,12 +35,12 @@
     display: block;
 }
 
-.footer .footer-icons {
+.footer-icons {
     margin: 0;
     padding: 0;
 }
 
-.footer .footer-icons li {
+.footer-icons li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -49,14 +49,14 @@
     font-size: 17px;
 }
 
-.footer .footer-icons li a {
+.footer-icons li a {
     color: var(--primary);
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none !important;
 }
 
-.footer .footer-icons li:hover a{
+.footer-icons li:hover a{
     color: var(--secondary);
 }
 
@@ -84,7 +84,7 @@
 .email { margin-left: -18px;}
 .medium { margin-left: -14px;}
 
-.footer .footer-icons li:hover .tooltip{
+.footer-icons li:hover .tooltip{
     opacity: 1;
     pointer-events: auto;
 }

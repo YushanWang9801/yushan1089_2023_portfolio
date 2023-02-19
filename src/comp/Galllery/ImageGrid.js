@@ -1,9 +1,9 @@
 import React from 'react';
-import useFirestore from '../hooks/useFirestore';
+import useFirestore from '../../hooks/useFirestore';
 import Filter from './Filter';
 import {motion} from 'framer-motion';
 import {useState} from "react";
-import "./../css/ImageGrid.css";
+import "./../../css/ImageGrid.css";
 
 /*const num_to_month = [{name: 'January', num: 1}, {num:2, name: 'February'}, 
                     {num:3, name: 'March'}, {num:4, name:'April'}, 

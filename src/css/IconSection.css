@@ -1,14 +1,14 @@
 
 .icons{
     display: grid;
-    display: inline-flex;
+    display: flex;
+    gap: 100px;
     place-items: center;
 
     height: 100%;
     margin-top: 60px;
-    margin-left: 80px;
     margin-bottom: 80px;
-    padding: 0 auto;
+    padding: 0 200px;
     box-sizing: border-box;
 
     font-family: "Comic Sans MS", "Comic Sans", cursive, 
@@ -16,7 +16,7 @@
 }
 
 .icons a{
-    margin: 0 60px;
+    margin: 0;
     text-decoration: none;
     color: #fff;
     display: block;

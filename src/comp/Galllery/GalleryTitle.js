@@ -1,6 +1,6 @@
 import React from 'react';
 import Typed from "react-typed";
-import "./../css/GalleryTitle.css";
+import "./../../css/GalleryTitle.css";
 
 const GalleryTitle = () => {
   return (
