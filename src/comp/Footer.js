@@ -18,14 +18,14 @@ const Footer = () => {
                     <div className="pull-right">
                         <ul className="footer-icons">
                             <li>
-                                <div className="tooltip github"> Find me on Github </div>
+                                <div className="tooltip github"> Github </div>
                                 <a href="https://github.com/yushan1089"
                                 target="_blank" rel="noreferrer" aria-label="Find me on Github">
                                 <FontAwesomeIcon className="faicon" icon={faGithub} /></a>
                             </li>
 
                             <li>
-                                <div className="tooltip linkedin"> Find me on LinkedIn </div>
+                                <div className="tooltip linkedin">LinkedIn </div>
                                 <a href="https://www.linkedin.com/in/yushan1089/"
                                 target="_blank" rel="noreferrer" aria-label="Find me on LinkedIn">
                                 <FontAwesomeIcon className="faicon" icon={faLinkedin} /></a>
