@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from './comp/Footer';
+import GalleryTitle from './comp/GalleryTitle';
+
+//import UploadForm from './comp/UploadForm';
+import ImageGrid from './comp/ImageGrid';
+import Modal from './comp/Modal';
+
+import HeaderWang  from './comp/HeaderWang';
+import Contact from './comp/Contact';
+
+import {useState} from 'react';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderWang />
+      {/* <GalleryTitle /> */}
+      {/* <Gallery /> */}
+      {/* <Contact /> */}
+      <Footer />
     </div>
+  );
+}
+
+
+function Gallery(){
+  const [selectedImg, setSelectedImg] = useState(null); 
+
+  return (
+    <div className="Gallery">
+      {/* <UploadForm /> */}
+      <ImageGrid setSelectedImg={setSelectedImg}/>
+      { selectedImg && (
+        <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+      )}
+  </div>
   );
 }
 

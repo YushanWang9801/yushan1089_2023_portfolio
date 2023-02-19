@@ -1,13 +1,40 @@
+@font-face {
+  font-family: Optima;
+  src: url("./fonts/OPTIMA.TTF");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+  Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #111111;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+  Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root{
+  --primary: #00A19C;
+  --secondary: #C6C6C6;
+  --error: #7d1236;
+
+  --background: #111111;
+  --merc_red:  #7d1236;
+}
+
+/* base styles & title */
+body{
+  font-family: "Noto Serif";
+  color: var(--secondary);
+  background: var(--background);
+  /* background: var(--secondary); */
+}
+
+.App{
+  max-width: 1080px;
+  margin: 0 auto;
 }

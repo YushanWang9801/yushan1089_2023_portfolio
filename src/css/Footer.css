@@ -1,0 +1,126 @@
+.footer {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+.footer .copyright {
+    color: #00A19C;
+    padding-top: 1em;
+    margin-top: 3em;
+    border-top: 1px solid #C6C6C6;
+    margin-bottom: 2em;
+    font-size: 15px;
+    padding-top: 3em;
+}
+
+@media screen and (max-width: 768px) {
+    .footer .copyright .pull-left,
+    .footer .copyright .pull-right {
+      float: none !important;
+      text-align: center;
+      
+    }
+}
+
+.media-right, .media > .pull-right { padding-left: 10px; }
+.media-left,  .media > .pull-left { padding-right: 10px; }
+.pull-right { float: right !important; }
+.pull-left {  float: left !important;  }
+  
+.footer .copyright .block {
+    display: block;
+}
+
+.footer .footer-icons {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footer-icons li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.footer .footer-icons li a {
+    color: var(--primary);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none !important;
+}
+
+.footer .footer-icons li:hover a{
+    color: #c6c6c6;
+}
+
+.tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #c6c6c6;
+    color: #111111;
+    text-shadow: 1px 1px 0.5px var(--primary);
+    opacity: 0;
+    
+    border-radius: 10px;
+    font-size: 13.5px;
+    font-weight: 500;
+    padding: 2px 14px 2px;
+
+    pointer-events: none;
+    box-shadow: -1px -1px 1px var(--primary);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.github{
+    margin-top: -30px;
+    margin-left: -52px;
+}
+
+.linkedin{
+    margin-top: -30px;
+    margin-left: -58px;
+}
+
+.instagram{
+    border-radius: 5px;
+    margin-top: -30px;
+    margin-left: -28px;
+}
+
+.email{
+    padding: 3px 14px 2px;
+    margin-top: -26px;
+    margin-left: -24px;
+}
+
+.medium{
+    padding: 3px 14px 2px;
+    margin-top: -26px;
+    margin-left: -20px;
+}
+
+.footer .footer-icons li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tooltip:before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #c6c6c6;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
