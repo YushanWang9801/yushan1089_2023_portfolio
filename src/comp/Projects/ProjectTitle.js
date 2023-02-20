@@ -1,11 +1,19 @@
 import React from 'react';
+import Typed from "react-typed";
 
-import "../../css/ProjectTitle.css";
+import "../../css/Project.css";
 
 function ProjectTitle() {
     return (
         <div className='ProjectTitle'>
-            <h2>Hello, Here are my recent Projects</h2>
+            <h2>My Projects</h2>
+            <div className="animated-typing">
+            <Typed
+            strings={["Hello, Here is a summary of my projects.",]}
+                typeSpeed={80}
+                backSpeed={40}
+                loop />
+            </div>
         </div>
     );
 }

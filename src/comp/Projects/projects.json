@@ -1,0 +1,17 @@
+[
+    { 
+        "name": "Retinal Fundus Age Estimation", 
+        "short_desc": "Age Estimation using Retinal Fundus and Segmented Vessel Images with Deep Learning Algorithm",
+        "tags": ["#Age Estimation", "#Deep Learning"],
+        "desc": "I recently published paper 'Age Estimation using Retinal Fundus and Segmented Vessel Images with Deep Learning Algorithm' in the ARVO 2023. We use eye scan images to predict patients chronologic age.",
+        "source_code_url" : "#"
+    },
+    {
+        "name": "Formula1 In Schools", 
+        "short_desc": "We build the 8th fastest car in the FIS International Final and won the 2nd place in the National Final ",
+        "tags": ["#Formula 1", "FIS 2016", "CFR Racing"],
+        "desc": "F1 in Schools is an international STEM challenge to design and manufacture a miniature car out of the official F1 Model Block using CAD/CAM design tools. We won the 2nd place in the National Final",
+        "source_code_url" : "#"
+    }
+                      
+]
