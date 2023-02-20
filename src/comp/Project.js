@@ -15,12 +15,11 @@ function Project () {
         <div className="project">
             <HeaderWang />
             <ProjectTitle />
-            {projects.map(project => (
-                <ProjectCard proj={project}/>
-            ))}
-            {projects.map(project => (
-                <ProjectCard proj={project}/>
-            ))}
+            <div className='project-grid'>
+                {projects.map(project => (
+                    <ProjectCard proj={project}/>
+                ))}
+            </div>
             <Footer />
         </div>
     );

@@ -28,19 +28,22 @@
     display: flex;
 }
 
-/* ProjectCard */
-.ProjectCard {
-    box-sizing: border-box;
-    padding: 50px;
-    display: flex;
-    flex: 200px;
-    margin: 30px;
+.project-grid{  
+    margin: 0px 0px 30px -60px;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 30px;
+    grid-template-columns: 440px 440px;
 }
+
+/* ProjectCard */
 .ProjectCard .card {
+  display: inline-block;
+  padding: 50px 0px;
   font-weight: bold;
   position: relative;
   width: 440px;
-  height: 200px;
+  height: 220px;
 }
 
 .ProjectCard .card a {
@@ -52,7 +55,7 @@
   background: linear-gradient(var(--accent), var(--background), var(--accent));
   text-decoration: none;
   color: var(--secondary);
-  display: block;
+  display: inline-block;
   transition: 0.25s ease;
 }
 
@@ -113,6 +116,4 @@
     padding-left: 3px;
     padding-top: 1px;
 }
-
-/* ProjectHashtag*/
 
