@@ -8,7 +8,7 @@ import "../../css/Project.css";
 
 export default function ProjectCard({proj}) {
     let source_code;
-    if (proj.source_code_url != "#"){
+    if (proj.source_code_url !== "#"){
         source_code = <span className="Code">Source Code</span>;
     }
     
