@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* <Gallery /> */}
-      <Project />
+      {/* <Project /> */}
       <Mainpage />
       {/* <Blog/> */}
       {/* <SingleBlog /> */}

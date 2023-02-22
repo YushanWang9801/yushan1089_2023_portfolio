@@ -1,17 +1,18 @@
 import React from 'react';
 import "./../css/Mainpage.css";
 import "./../css/style.css";
+import Footer from './Footer';
+import HeaderWang from './HeaderWang';
+import Coverpage from './Sections/Coverpage';
+import NameCard from './Sections/NameCard';
 
 function Mainpage() {
     return (
         <div className="Mainpage">
-            <div className="coverpage">
-                <div className="leftpage">
-                    <div className="circle"></div>
-                </div>
-                <div className="rightpage">
-                </div>
-            </div>
+            <HeaderWang />
+            <Coverpage />
+            <NameCard />
+            <Footer />
         </div>
     );
 }
