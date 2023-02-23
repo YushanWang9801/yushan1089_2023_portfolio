@@ -2,6 +2,7 @@ import Blog from './comp/Blog';
 import Gallery from './comp/Gallery';
 import Project from "./comp/Project";
 import Mainpage from "./comp/Mainpage";
+import SingleBlog from './comp/Blog/SingleBlog';
 
 function App() {
   
@@ -9,8 +10,8 @@ function App() {
     <div className="App">
       {/* <Gallery /> */}
       {/* <Project /> */}
-      <Mainpage />
-      {/* <Blog/> */}
+      {/* <Mainpage /> */}
+      <Blog/>
       {/* <SingleBlog /> */}
     </div>
   );

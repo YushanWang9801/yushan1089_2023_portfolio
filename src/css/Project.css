@@ -29,27 +29,24 @@
 }
 
 .project-grid{  
-    margin: 0px 0px 30px -60px;
+    margin: 50px 0px 50px -60px;
     display: grid;
     justify-content: space-evenly;
-    gap: 30px;
+    gap: 50px;
     grid-template-columns: 440px 440px;
 }
 
 /* ProjectCard */
-.ProjectCard .card {
+.project-grid .ProjectCard .card {
   display: inline-block;
-  padding: 50px 0px;
   font-weight: bold;
   position: relative;
   width: 440px;
   height: 220px;
 }
 
-.ProjectCard .card a {
+.project-grid .ProjectCard .card {
   padding: 30px;
-  width: 100%;
-  height: 100%;
   border: 2px solid linear-gradient(var(--accent), var(--background));;
   border-radius: 10px;
   background: linear-gradient(var(--accent), var(--background), var(--accent));
@@ -59,14 +56,14 @@
   transition: 0.25s ease;
 }
 
-.ProjectCard .card a:hover {
+.project-grid .ProjectCard .card:hover {
   transform: translate(-30px, -30px);
   border-color: var(--primary);
 }
 
-.ProjectCard .card a:hover .card--display { display: none; }
-.ProjectCard .card a .card--display h2 {  margin-top: 60px; }
-.ProjectCard .card a .card--display h3 { 
+.project-grid .ProjectCard .card:hover .card--display { display: none; }
+.project-grid .ProjectCard .card .card--display h2 {  margin-top: 60px; }
+.project-grid .ProjectCard .card .card--display h3 { 
     margin-top: 10px;
     font-size: 17px;
     line-height: 1.5;
@@ -74,9 +71,9 @@
     color:var(--primary); 
 }
 
-.ProjectCard .card a .card--display .hashtag {margin-top: 30px;}
+.project-grid .ProjectCard .card .card--display .hashtag {margin-top: 30px;}
 
-.ProjectCard .card a .card--display span { 
+.project-grid .ProjectCard .card .card--display span { 
     margin-right: 20px;
     color: var(--secondary); 
     padding: 5px 10px;
@@ -88,20 +85,20 @@
 }
 
 
-.ProjectCard .card a:hover .card--hover { display: block; }
-.ProjectCard .card a .card--hover { display: none;}
+.project-grid .ProjectCard .card:hover .card--hover { display: block; }
+.project-grid .ProjectCard .card .card--hover { display: none;}
 
-.ProjectCard .card a .card--hover h2 {
+.project-grid .ProjectCard .card .card--hover h2 {
     margin-top: 30px;
     color: var(--primary);
 }
 
-.ProjectCard .card a .card--hover p {
+.project-grid .ProjectCard .card .card--hover p {
   font-weight: normal;
   line-height: 1.5;
 }
 
-.ProjectCard .card a .card--hover .link {
+.project-grid .ProjectCard .card .card--hover .link {
     font-weight: bold;
     font-size: 1em;
     color: var(--primary);
@@ -111,7 +108,7 @@
     margin: 0px 50px 10px 0px; 
 }
 
-.ProjectCard .card a .card--hover .faicon {
+.project-grid .ProjectCard .card  .card--hover .faicon {
     font-weight: normal;
     padding-left: 3px;
     padding-top: 1px;

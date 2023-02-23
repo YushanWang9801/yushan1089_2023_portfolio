@@ -15,7 +15,6 @@ export default function ProjectCard({proj}) {
     return (
     <div className="ProjectCard">
         <div className="card">
-            <a href="ageEstimation">
                 <div className="card--display">
                     <h2>{proj.name}</h2>
                     <h3>{proj.short_desc}</h3>
@@ -34,7 +33,6 @@ export default function ProjectCard({proj}) {
                         {source_code}
                     </div>
                 </div>
-            </a>
             <div className="card--border"></div>
         </div>
     </div>

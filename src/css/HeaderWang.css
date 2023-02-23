@@ -1,7 +1,8 @@
 .HeaderWang {
     font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
                     Roboto, Helvetica, Arial, sans-serif;
-    margin-top: 20px;
+    padding-top: 40px;
+    padding-left: 30px;
     display: flex;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
