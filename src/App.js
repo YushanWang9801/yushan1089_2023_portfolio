@@ -3,7 +3,7 @@ import Gallery from './comp/Gallery';
 import Project from "./comp/Project";
 import Mainpage from "./comp/Mainpage";
 import SingleBlog from './comp/Blog/SingleBlog';
-import ProjectPage from './comp/Projects/ProjectPage';
+import AboutPage from './comp/AboutPage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -18,7 +18,7 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="singleBlog" element={<SingleBlog />} />
-          <Route path="projectPage" element={<ProjectPage />} />
+          <Route path="me" element={<AboutPage />} />
         </Routes>
       </Router> 
     </div>
