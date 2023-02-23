@@ -4,17 +4,23 @@ import Project from "./comp/Project";
 import Mainpage from "./comp/Mainpage";
 import SingleBlog from './comp/Blog/SingleBlog';
 import ProjectPage from './comp/Projects/ProjectPage';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   
   return (
     <div className="App">
-      <Mainpage />
-      {/* <Project /> */}
-      {/* <Blog/> */}
-      {/* <Gallery />       */}
-      {/* <SingleBlog /> */}
-      {/* <ProjectPage /> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Mainpage />} />
+          <Route path="project" element={<Project />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="singleBlog" element={<SingleBlog />} />
+          <Route path="projectPage" element={<ProjectPage />} />
+        </Routes>
+      </Router> 
     </div>
   );
 }

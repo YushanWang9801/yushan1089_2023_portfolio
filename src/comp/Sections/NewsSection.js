@@ -53,8 +53,9 @@ function NewsSection() {
                             </p>
                         </figcaption>
                     </figure>
+                    </div>
 
-                    <h2><strong>Gallery Recent Updates</strong></h2>
+                    <h2><strong>Recent Gallery Updates</strong></h2>
                     <div className="recent-gallery">
                         <div className="gallerySection">
                             <img src="https://images.unsplash.com/photo-1569390173732-5c735072c80f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
@@ -62,10 +63,8 @@ function NewsSection() {
                             <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""/>
                             <img src="https://www.linkpicture.com/q/news2.png" alt=""/>
                             <img src="https://www.linkpicture.com/q/news2.png" alt=""/>
-                            
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     );

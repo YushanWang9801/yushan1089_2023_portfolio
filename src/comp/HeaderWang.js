@@ -21,12 +21,12 @@ const HeaderWang = ({ setDarkMode }) => {
 
     return (
         <div className="HeaderWang">
-            <h1>YushanWang9801</h1>    
+            <a href="/"><h1>YushanWang9801</h1> </a>   
             <nav className="navbar">
-                <a href="#">Projects</a>
-                <a href="#">Blogs</a>
-                <a href="#">Gallery</a>
-                <a href="#" id="Me">Me</a>
+                <a href="project">Projects</a>
+                <a href="blog">Blogs</a>
+                <a href="gallery">Gallery</a>
+                <a href="/" id="Me">Me</a>
             </nav>
             <div className='dark_mode'>
                 <input
