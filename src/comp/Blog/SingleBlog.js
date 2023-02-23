@@ -10,8 +10,8 @@ function SingleBlog () {
     return (
         <div className="SingleBlog">
             <HeaderWang />
-            <BlogTitle blog={blogsData} />
-            <BlogContent content={blogsData.content}/>
+            <BlogTitle blog={blogsData[0]} />
+            <BlogContent content={blogsData[0].content}/>
             <Footer />        
         </div>
     );

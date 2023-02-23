@@ -1,5 +1,3 @@
-
-
 .Blog-grid {
     margin-top: 40px;
     margin-left: 40px;
@@ -9,7 +7,7 @@
 .BlogCard {
     width: 980px;
     height: 320px;
-    margin: 0px auto;
+    margin: 20px auto;
     display: inline-flex;
 }
 
@@ -17,7 +15,6 @@
     width: 400px;
     height: 320px;
     display: inline-flex;
-    border: 5px solid red;
 }
 
 .BlogCard .left-section h2 { font-size: 18px;}
@@ -106,3 +103,68 @@
 .card-section:hover .flap-left{
     transform: translatex(-300px);
 }
+
+
+
+/* BlogCover */
+.BlogCover  .text-light {   font-weight: 300;   }
+.BlogCover  .text-bold {    font-weight: bold;}
+.BlogCover {
+    font-size: 20px;
+    font-weight: 300;
+    height: 600px;
+    padding: 1em;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+  
+.BlogCover span {display: block;}
+  
+.BlogCover .title .text-bold {
+    font-family: 'Abel', sans-serif;
+}
+  
+.BlogCover .title--primary,
+.BlogCover .title--secondary { z-index: 2; };
+.BlogCover .title--secondary {text-align: right;}
+.BlogCover .title--secondary .text-bold { font-size: max(6vw, 40px); }
+.BlogCover .title--primary .text-bold {font-size: max(6vw, 40px); }
+  
+.BlogCover .title--primary {
+    margin: -500px 0px 0px 10px;
+}
+
+.BlogCover .title--secondary {
+    margin: 250px 0px 0px 10px;
+    padding-left: 600px;
+}
+
+@keyframes scribble {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+div#stripped {
+    max-width: 750px;
+    margin: 0 auto;
+    background: var(--background);
+    background-image: url(../images/DSC_7789.jpg);
+    background-size: cover;
+    font-size: 0;
+    border-radius: 20px;
+}
+div#stripped svg {
+    mix-blend-mode: darken;
+    border-radius: 20px;
+}
+
+div#stripped svg polyline {
+    fill: none;
+    stroke: var(--primary);
+    stroke-opacity: 0.5;
+    stroke-width: 200;
+    stroke-dasharray: 20000;
+    stroke-dashoffset: 20000;
+    animation: scribble 3s linear forwards;
+}
+  

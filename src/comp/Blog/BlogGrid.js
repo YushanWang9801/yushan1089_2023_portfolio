@@ -1,15 +1,14 @@
 import React from 'react';
 import BlogCard from './BlogCard';
-import useBlogs from '../../hooks/useBlogs';
+
+import blogs from "./blogs-data.json";
 
 function BlogGrid () {
-    const {blogs} = useBlogs();
-
     return (
         <div className="Blog-grid">
-            {blogs.map(blog => (
-                <BlogCard blog={blog}/>
-            ))}
+                {blogs.map(blog => (
+                    <BlogCard blog={blog}/>
+                ))}
         </div>
     );
 }

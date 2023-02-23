@@ -11,7 +11,7 @@ function Mainpage() {
         <div className="Mainpage">
             <HeaderWang />
             <Coverpage />
-            <NameCard />
+            {/* <NameCard /> */}
             <Footer />
         </div>
     );

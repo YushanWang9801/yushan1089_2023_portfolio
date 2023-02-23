@@ -3,16 +3,18 @@ import Gallery from './comp/Gallery';
 import Project from "./comp/Project";
 import Mainpage from "./comp/Mainpage";
 import SingleBlog from './comp/Blog/SingleBlog';
+import ProjectPage from './comp/Projects/ProjectPage';
 
 function App() {
   
   return (
     <div className="App">
-      {/* <Gallery /> */}
+      <Mainpage />
       {/* <Project /> */}
-      {/* <Mainpage /> */}
-      <Blog/>
+      {/* <Blog/> */}
+      {/* <Gallery />       */}
       {/* <SingleBlog /> */}
+      {/* <ProjectPage /> */}
     </div>
   );
 }

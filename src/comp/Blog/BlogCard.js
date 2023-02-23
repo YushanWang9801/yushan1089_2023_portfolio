@@ -6,18 +6,17 @@ import { faArrowRight }
             from '@fortawesome/free-solid-svg-icons';
 
 function BlogCard({blog}){
-    const img = blog["img-url"];
-    const time = blog["time"];
+    const img = blog["coverImage"];
     
     return (
         <div className="BlogCard">
             <div className="left-section">
                 <div className="time-section">
-                    <h2>April 04, 2022 </h2>
-                    <h2>Monday</h2>
+                    <h2>{blog.date}</h2>
+                    <h2>{blog.weekday}</h2>
                 </div>
                 <div className="title-section">
-                    <h1>{blog.name}</h1>
+                    <h1>{blog.title}</h1>
                 </div>
             </div>
             <div className="card-section">

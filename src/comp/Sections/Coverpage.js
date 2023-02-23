@@ -5,9 +5,10 @@ function Coverpage() {
     return (
         <div className="coverpage">
             <div className="leftpage">
-                <div className="circle"></div>
             </div>
             <div className="rightpage">
+                <div className="circle"></div>
+                <span>Send Message</span>
             </div>
         </div>
     );

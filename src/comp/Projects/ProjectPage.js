@@ -1,4 +1,6 @@
 import React from "react";
+import HeaderWang from "../HeaderWang";
+import Footer from "../Footer";
 
 const pageData = {"name" : "Face Mask Detector",
     "title": "COVID Face Mask Detector",
@@ -11,7 +13,10 @@ const pageData = {"name" : "Face Mask Detector",
 
 function ProjectPage({pageData}) {
     return (
-        <div className="ProjectPage"></div>
+        <div className="ProjectPage">
+            <HeaderWang />
+            <Footer />
+        </div>
     );
 }
 
