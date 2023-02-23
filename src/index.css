@@ -27,6 +27,9 @@ code {
   --merc-silver: #c6c6c6;
   --merc-red:  #7d1236;
   --medium: #fff;
+  --blur-secondary: rgba(198, 198, 198, 0.4);
+  --blur-background: rgba(17, 17, 17, 0.4);
+
 }
 
 [data-theme="light"] {
@@ -35,7 +38,10 @@ code {
   --primary: #00A19C;
   --error: #7d1236;
   --accent: #ebeaee;
+  
   --medium: #111111;
+  --blur-secondary: rgba(61, 61, 61, 0.4);
+  --blur-background: rgba(242, 244, 242, 0.4);
 }
 
 .App{

@@ -1,0 +1,248 @@
+.wrapper .abs,
+h2:after,
+.cards .card figcaption,
+.cards .card:after,
+.news .card figcaption,
+.news .card:after,
+.news .article figcaption {
+  position: absolute;
+}
+.wrapper .rel,
+h2,
+h2 strong,
+.cards .card,
+.news .card,
+.news .article {
+  position: relative;
+}
+
+.wrapper .fix {
+  position: fixed;
+}
+
+.wrapper .dfix {
+  display: inline;
+}
+
+.wrapper .dib {
+  display: inline-block;
+}
+.wrapper .db {
+  display: block;
+}
+.wrapper .dn {
+  display: none;
+}
+.wrapper .df,
+.cards,
+.news {
+  display: flex;
+}
+.wrapper .dif {
+  display: inline-flex;
+}
+.wrapper .dg {
+  display: grid;
+}
+.wrapper .dig {
+  display: inline-grid;
+}
+
+.wrapper .vm,
+h2,
+h2 strong,
+h2 span {
+  vertical-align: middle;
+}
+
+.wrapper {
+  padding: 15px;
+}
+.wrapper  h2 {
+  padding: 10px;
+  padding-left: 25px;
+  color: var(--secondary);
+  margin: 0;
+}
+.wrapper h2 strong {
+  z-index: 2;
+  background: var(--background);
+  padding: 4px 8px;
+}
+.wrapper h2 span {
+  font-size: 0.7em;
+  color: var(--secondary);
+  margin-left: 10px;
+}
+.wrapper  h2:after {
+  content: '';
+  z-index: 1;
+  bottom: 50%;
+  margin-bottom: -2px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  background: #373d47;
+}
+.cards,
+.news {
+  flex-flow: row wrap;
+}
+.cards .card,
+.news .card {
+  margin: 20px;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  transition: 0.3s;
+}
+.cards .card img,
+.news .card img {
+  width: 100%;
+  min-height: 100%;
+}
+.cards .card figcaption,
+.news .card figcaption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background: none;
+  color: #fff;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+.cards .card:after,
+.news .card:after {
+  content: '';
+  z-index: 10;
+  width: 200%;
+  height: 100%;
+  top: -90%;
+  left: -20px;
+  opacity: 0.1;
+  transform: rotate(45deg);
+  background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+  transition: 0.3s;
+}
+
+.cards .card:hover,
+.news .card:hover,
+.cards .card:focus,
+.news .card:focus,
+.cards .card:active,
+.news .card:active {
+  box-shadow: 0 8px 16px 3px var(--blur-secondary);
+  transform: translateY(-3px) scale(1.05) rotateX(15deg);
+}
+.cards .card:hover figcaption,
+.news .card:hover figcaption,
+.cards .card:focus figcaption,
+.news .card:focus figcaption,
+.cards .card:active figcaption,
+.news .card:active figcaption {
+  transform: none;
+}
+.cards .card:hover:after,
+.news .card:hover:after,
+.cards .card:focus:after,
+.news .card:focus:after,
+.cards .card:active:after,
+.news .card:active:after {
+  transform: rotate(25deg);
+  top: -40%;
+  opacity: 0.15;
+}
+.news .article {
+  overflow: hidden;
+  width: 350px;
+  height: 235px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.news .article img {
+  width: 100%;
+  min-height: 100%;
+  transition: 0.2s;
+}
+.news .article figcaption {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 30px;
+  background-color: var(--blur-background);
+  box-shadow: 0 0 2px var(--secondary);
+  opacity: 0;
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+.news .article figcaption h3 {
+  color: var(--primary);
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.news .article:hover img,
+.news .article:focus img,
+.news .article:active img {
+  filter: blur(3px);
+  transform: scale(0.97);
+}
+.news .article:hover figcaption,
+.news .article:focus figcaption,
+.news .article:active figcaption {
+  opacity: 1;
+  transform: none;
+}
+
+
+
+
+.gallerySection img {
+  height: 300px;
+  width: 250px;
+  overflow: hidden;
+  object-fit: cover;
+  text-align: center;
+  
+  -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+  
+  transform-origin:center;
+  transform:perspective(800px) rotateY(25deg);
+  transition:0.5s;
+  border-radius: 10px;
+}
+
+
+.gallerySection  {
+  box-sizing:border-box;
+  max-height:350px;  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  place-items:center;
+  gap:20px;
+}
+.gallerySection:hover img {
+  opacity:0.3;
+}
+.gallerySection img:hover {
+  transform: perspective(800px)       rotateY(0deg);
+  opacity:1;
+}
+
+.recent-gallery {
+  width: 950px;
+  height: 400px;
+  display: block;
+  margin: 20px auto;
+}

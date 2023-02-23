@@ -6,6 +6,7 @@ import Footer from './Footer';
 import HeaderWang from './HeaderWang';
 import CoverSection from './Sections/CoverSection';
 import Contact from './Contact';
+import NewsSection from './Sections/NewsSection';
 
 function Mainpage() {
     return (
@@ -13,6 +14,7 @@ function Mainpage() {
             <HeaderWang />
             <CoverSection />
             <AboutSection />
+            <NewsSection />
             <Contact />
             <Footer />
         </div>

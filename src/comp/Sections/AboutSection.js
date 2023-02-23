@@ -11,12 +11,11 @@ function AboutSection(){
             <div className="aboutRight">
                 <h1>My Latest</h1>
                 <p>
-                I recently graduated from University College London, 
-                studying my graduate program in Computer Graphics, Vision and Imaging.
+                I recently graduated from University College London with Distinction
+                in Master of Science, Computer Graphics, Vision and Imaging.
                 </p> 
                 <p>
                 I completed my bachelor degrees at University of California, San Diego with a Double Major in Computer Engineering and Applied Mathematics. 
-                I graduated in December, 2020.
                 </p> 
                 <p>
                 I worked in IQIYI as a Data Analyst in 2021. 
