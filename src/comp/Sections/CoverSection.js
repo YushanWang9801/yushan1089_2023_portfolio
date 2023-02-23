@@ -1,12 +1,12 @@
 import React from "react";
-import "../../css/Coverpage.css";
+import "../../css/CoverSection.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-function Coverpage() {
+function CoverSection() {
     return (
-        <div className="coverpage">
+        <div className="coversection">
             <div className="leftpage">
                 <div className="first-row">
                     <span>Hi, I am</span><span className="name">YUSHAN WANG</span>
@@ -32,4 +32,4 @@ function Coverpage() {
     );
 }
 
-export default Coverpage;
+export default CoverSection;

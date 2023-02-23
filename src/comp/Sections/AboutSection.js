@@ -1,11 +1,10 @@
 import React from "react";
-import NameCard from "./Sections/NameCard";
-
-import ".."
+import NameCard from "./NameCard";
+import "./../../css/Mainpage.css";
  
-function AboutPage(){
+function AboutSection(){
     return (
-        <div className="AboutPage">
+        <div className="AboutSection">
             <div className="aboutLeft">
                 <NameCard />
             </div>
@@ -29,4 +28,4 @@ function AboutPage(){
     );
 }
 
-export default AboutPage;
+export default AboutSection;
