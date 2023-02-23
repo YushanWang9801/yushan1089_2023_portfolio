@@ -90,8 +90,8 @@
 }
 .icons a:nth-child(5) .layer span,
 .icons a:nth-child(5) .text{
-    color: #fff;
-    border-color: #fff;
+    color: var(--medium);
+    border-color: var(--medium);
 }
 .icons a:hover:nth-child(1) .layer span{
     box-shadow: -1px 1px 3px #4267B2;

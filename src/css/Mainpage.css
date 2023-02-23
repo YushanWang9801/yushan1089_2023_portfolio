@@ -1,11 +1,23 @@
-/* Intro */
-.intro {
-    margin-top: 50px;
-    border: 2px solid yellow;
+.AboutPage {
+    display: flex;
 }
-.intro #title {
-    color: var(--primary);
-    margin-left: 200px;
-    padding-top: 200px;
-    font-size: 40px;
+
+.aboutRight {
+    width: 500px;
+    margin-top: 15px;
+}
+
+.aboutRight h1{
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: -2px;
+}
+
+.aboutRight p{
+    margin: 4px 20px;
+    padding: 2px 20px;
+    font-size: 20px;
+    text-align: left;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
 }

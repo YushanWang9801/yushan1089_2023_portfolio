@@ -1,8 +1,9 @@
+
 /** circle **/
 .circle {
-    width: 300px;
-    height: 300px;
-    margin-top: 80px;
+    width: 220px;
+    height: 220px;
+    margin-left: -100px;
 
     transform-style: preserve-3d;
     position: relative;
@@ -19,7 +20,7 @@
     height: 100%;
     margin-left: 50%;
     border-radius: 50%;
-    background: center/cover url(./../images/about-img-2.jpg);
+    background: center/cover url(./../images/about-img-3.jpg);
 }
 
 .circle:before {
@@ -64,3 +65,74 @@
         transform: rotate(0deg);
     }
 }
+
+/* Page */
+.coverpage {
+    display: block;
+    width: 980px;
+    height: 250px;
+    margin: 10px auto;
+    padding: 20px;
+    background: var(--accent);
+    border-radius: 20px;
+    display:flex;
+}
+
+.leftpage {
+    width: 700px;
+    height: 250px;
+}
+
+.first-row { padding: 10px 20px;
+            display: flex;
+        gap: 10px;
+            margin-top:20px;
+            margin-bottom: 40px;}
+.second-row{ padding: 0px 20px;}
+.second-row .title {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid var(--secondary);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-row .title:hover {
+    color: var(--primary);
+}
+
+.first-row span { font-size: 48px; color: var(--primary);}
+.second-row span {
+    font-size: 20px;
+}
+.second-row #title {margin-left: 10px;}
+
+.second-row .institution {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.second-row .institution:hover {
+    color: var(--primary);
+}
+
+.rightpage .sendMessage{
+    display: block;
+    width: 200px;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid var(--secondary);
+    background: linear-gradient(45deg, var(--accent), var(--background))
+}
+
+.rightpage .sendMessage span{   
+    width: 220px;
+}
+
+
+
+
+
+
