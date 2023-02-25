@@ -6,6 +6,7 @@ import SingleBlog from './comp/Blog/SingleBlog';
 import AboutPage from './comp/AboutPage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import TestPage from './comp/TestPage';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="singleBlog" element={<SingleBlog />} />
           <Route path="me" element={<AboutPage />} />
+          <Route path="test" element={<TestPage />} />
         </Routes>
       </Router> 
     </div>

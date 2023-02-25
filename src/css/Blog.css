@@ -20,15 +20,15 @@
 .BlogCard .left-section h2 { font-size: 18px;}
 .BlogCard .left-section h2:hover{ color: var(--primary);  }
 .BlogCard .time-section {
-    width: 150px;
+    width: 100px;
     padding-left: 40px;
     padding-top: 40px;
 }
 
 .BlogCard .title-section {
     width: 250px;
-    padding-left: 40px;
     padding-top: 30px;
+    text-align: left;
 }
 
 

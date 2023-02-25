@@ -16,7 +16,7 @@ function BlogCard({blog}){
                     <h2>{blog.weekday}</h2>
                 </div>
                 <div className="title-section">
-                    <h1>{blog.title}</h1>
+                    <h1>{blog.name}</h1>
                 </div>
             </div>
             <div className="card-section">

@@ -27,7 +27,7 @@ code {
   --merc-silver: #c6c6c6;
   --merc-red:  #7d1236;
   --medium: #fff;
-  --blur-secondary: rgba(198, 198, 198, 0.4);
+  --blur-secondary: #72D0CE;
   --blur-background: rgba(17, 17, 17, 0.4);
 
 }
@@ -40,7 +40,7 @@ code {
   --accent: #ebeaee;
   
   --medium: #111111;
-  --blur-secondary: rgba(61, 61, 61, 0.4);
+  --blur-secondary: #003938;
   --blur-background: rgba(242, 244, 242, 0.4);
 }
 
@@ -53,4 +53,5 @@ code {
 
 ::selection {
   background: var(--merc-red);
+  color: #ebeaee;
 }

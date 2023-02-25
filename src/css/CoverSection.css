@@ -101,20 +101,24 @@
 .second-row .title:hover {
     color: var(--primary);
 }
+.second-row .title a { 
+    text-decoration: none;
+    color: var(--secondary);
+}
+.second-row .title a:hover { 
+    text-decoration: none;
+    color: var(--primary);
+}
 
 .first-row span { font-size: 48px; color: var(--primary);}
 .second-row span {
     font-size: 20px;
 }
-.second-row #title {margin-left: 10px;}
+.second-row #title {margin: 0px 25px 0px 10px;}
 
 .second-row .institution {
     margin-top: 20px;
     padding-left: 10px;
-}
-
-.second-row .institution:hover {
-    color: var(--primary);
 }
 
 .rightpage .sendMessage{

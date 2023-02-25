@@ -113,7 +113,8 @@ h2 span {
   padding-bottom: 10px;
   font-size: 20px;
   background: none;
-  color: #fff;
+  color: var(--primary);
+  font-weight: bold;
   transform: translateY(100%);
   transition: 0.3s;
 }
@@ -127,7 +128,7 @@ h2 span {
   left: -20px;
   opacity: 0.1;
   transform: rotate(45deg);
-  background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+  background: linear-gradient(to top, transparent, var(--secondary) 100%, var(--primary));
   transition: 0.3s;
 }
 
@@ -137,7 +138,7 @@ h2 span {
 .news .card:focus,
 .cards .card:active,
 .news .card:active {
-  box-shadow: 0 8px 16px 3px var(--blur-secondary);
+  box-shadow: 0 8px 16px 3px var(--primary);
   transform: translateY(-3px) scale(1.05) rotateX(15deg);
 }
 .cards .card:hover figcaption,
@@ -157,6 +158,7 @@ h2 span {
   transform: rotate(25deg);
   top: -40%;
   opacity: 0.15;
+  filter: blur(4px);
 }
 .news .article {
   overflow: hidden;
@@ -186,10 +188,14 @@ h2 span {
   transition: 0.2s;
 }
 .news .article figcaption h3 {
-  color: var(--primary);
+  color: var(--secondary);
   font-size: 20px;
   margin-bottom: 0;
   font-weight: bold;
+}
+
+.news .article figcaption p{
+  color: var(--blur-secondary);
 }
 .news .article:hover img,
 .news .article:focus img,

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./../css/HeaderWang.css";
+import Icon from "./TestPage";
 
 const HeaderWang = ({ setDarkMode }) => {
     const setDarkTheme = () => {
@@ -13,11 +14,9 @@ const HeaderWang = ({ setDarkMode }) => {
     };
 
     const toggleTheme = (e) => {
-        if (e.target.checked) setDarkTheme();
-        else setLightTheme();
+        if (e.target.checked) setLightTheme();
+        else setDarkTheme();
     };
-
-
 
     return (
         <div className="HeaderWang">
@@ -30,13 +29,11 @@ const HeaderWang = ({ setDarkMode }) => {
             </nav>
             <div className='dark_mode'>
                 <input
-                    className='dark_mode_input'
+                    className='switch'
                     type='checkbox'
                     id='darkmode-toggle'
                     onChange={toggleTheme}
                 />
-                <label className='dark_mode_label' for='darkmode-toggle'>
-                </label>
             </div>
         </div>
     );
