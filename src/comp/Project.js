@@ -13,14 +13,12 @@ function Project () {
 
     return (
         <div className="project">
-            <HeaderWang />
             <ProjectTitle />
             <div className='project-grid'>
                 {projects.map(project => (
                     <ProjectCard proj={project}/>
                 ))}
             </div>
-            <Footer />
         </div>
     );
 }

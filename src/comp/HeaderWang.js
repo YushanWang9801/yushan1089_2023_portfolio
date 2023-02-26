@@ -1,23 +1,28 @@
 import React from 'react';
 import "./../css/HeaderWang.css";
-import Icon from "./TestPage";
+import { useState, useEffect } from 'react';
 
-const HeaderWang = ({ setDarkMode }) => {
-    const setDarkTheme = () => {
-        document.querySelector("body").setAttribute("data-theme", "dark");
-        setDarkMode(true);
+// const HeaderWang = ({ setDarkMode, darkMode }) => {
+const HeaderWang = () => {
+    const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') || true);
+    const [theme, setTheme] = useState( localStorage.getItem('theme') || 'dark');
+
+    const toggleTheme = () => {
+        if (theme === 'light') {
+            setTheme('dark');
+            setDarkMode(true);
+        } else {   
+            setTheme('light');
+            setDarkMode(false);
+        }
     };
-
-    const setLightTheme = () => {
-        document.querySelector("body").setAttribute("data-theme", "light");
-        setDarkMode(false);
-    };
-
-    const toggleTheme = (e) => {
-        if (e.target.checked) setLightTheme();
-        else setDarkTheme();
-    };
-
+    
+    useEffect(() => {
+        document.querySelector("body").setAttribute("data-theme", theme);
+        localStorage.setItem('theme', theme);
+        localStorage.setItem('darkMode', darkMode);
+    }, [theme]);
+    
     return (
         <div className="HeaderWang">
             <a href="/"><h1>YushanWang9801</h1> </a>   
@@ -30,6 +35,7 @@ const HeaderWang = ({ setDarkMode }) => {
             <div className='dark_mode'>
                 <input
                     className='switch'
+                    checked={darkMode}
                     type='checkbox'
                     id='darkmode-toggle'
                     onChange={toggleTheme}

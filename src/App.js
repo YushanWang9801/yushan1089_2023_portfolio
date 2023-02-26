@@ -4,14 +4,34 @@ import Project from "./comp/Project";
 import Mainpage from "./comp/Mainpage";
 import SingleBlog from './comp/Blog/SingleBlog';
 import AboutPage from './comp/AboutPage';
+import HeaderWang from './comp/HeaderWang';
+import Footer from './comp/Footer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import TestPage from './comp/TestPage';
+import {useState} from "react";
+
+const setDarkTheme = () => {
+  document.querySelector("body").setAttribute("data-theme", "dark");
+};
+
+const setLightTheme = () => {
+    document.querySelector("body").setAttribute("data-theme", "light");
+};
 
 function App() {
-  
+  // const [darkMode, setDarkMode] = useState(false);
+  // if (darkMode) setLightTheme();
+  // else setDarkTheme();
+
+  // useEffect(() => {
+  //   document.querySelector("body").setAttribute("data-theme", theme);
+  // }, [theme]);
+
   return (
     <div className="App">
+      {/* <HeaderWang setDarkMode={setDarkMode} darkMode={darkMode}/> */}
+      <HeaderWang />
       <Router>
         <Routes>
           <Route path="/" element={<Mainpage />} />
@@ -23,6 +43,7 @@ function App() {
           <Route path="test" element={<TestPage />} />
         </Routes>
       </Router> 
+      <Footer />
     </div>
   );
 }

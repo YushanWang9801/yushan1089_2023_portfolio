@@ -11,12 +11,10 @@ import NewsSection from './Sections/NewsSection';
 function Mainpage() {
     return (
         <div className="Mainpage">
-            <HeaderWang />
             <CoverSection />
             <AboutSection />
             <NewsSection />
             <Contact />
-            <Footer />
         </div>
     );
 }
