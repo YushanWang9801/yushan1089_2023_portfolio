@@ -40,8 +40,10 @@ code {
   --accent: #ebeaee;
   
   --medium: #111111;
-  --blur-secondary: #003938;
+  --blur-secondary: #02302F;
   --blur-background: rgba(242, 244, 242, 0.4);
+  /* --blur-secondary: #72D0CE;
+  --blur-background: rgba(17, 17, 17, 0.4); */
 }
 
 .App{
