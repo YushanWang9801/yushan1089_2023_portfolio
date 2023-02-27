@@ -176,13 +176,14 @@ h2 span {
 .news .article figcaption {
   font-size: 18px;
   font-weight: bold;
-  color: var(--secondary);
+  color: #fff;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   padding: 30px;
-  background-color: var(--blur-background);
+  /* background-color: var(--blur-background); */
+  background-color: rgba(91,98,104, 0.7);
   box-shadow: 0 0 2px var(--secondary);
   opacity: 0;
   transform: scale(1.15);

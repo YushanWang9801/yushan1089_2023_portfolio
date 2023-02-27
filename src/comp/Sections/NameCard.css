@@ -101,13 +101,16 @@ code {
     color: var(--secondary);
     font-size: 18px;
 }
-.card .indent { padding-left: 30px;}
-  .card .operator {
+.card .indent { 
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+  
+.card .operator {
     color: var(--primary);
   }
   .card .string {
-    color: #FF8000;
-    color: #D7BA69;
+    color: #f3994c;
   }
   .card .variable {
     color: #BA68C8;
@@ -123,7 +126,7 @@ code {
   .card .function {
     color: #29b6f6;
   }
-  .card .boolean {
-    color: #4dd0e1;
+  .card .array {
+    color: #6E8Dd3;
   }
   

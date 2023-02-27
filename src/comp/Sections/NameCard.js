@@ -28,13 +28,13 @@ function NameCard() {
                     <div class="indent"> <span class="property">name</span><span class="operator">: </span><span class="string">'Yushan Wang'</span><span>,</span></div>
                     <div class="indent"> <span class="property">title</span><span class="operator">: </span><span class="string">'Software Engineer'</span><span>,</span></div>
                     <div class="indent"> <span class="property">Code</span><span class="operator">: 
-                        </span><span class="operator" >&#91;</span><span class="string"> "Python" , "JavaScript", "C++", "Matlab", "MySQL"</span><span class="operator">&#93;</span>
+                        </span><span class="operator" >&#91;</span><span class="array"> "Python" , "JavaScript", "C++", "Matlab", "MySQL"</span><span class="operator">&#93;</span>
                     </div>
                     <div class="indent"> <span class="property">Web</span><span class="operator">: </span>
                             <span class="operator">&#91;</span>
-                                <span class="string"> "React" , "Tailwind", "NextJS", 
-                                "HTML</span><span class="string">&#47;</span>
-                                <span class="string">css</span><span class="string">&#47;</span><span class="string">JS"</span>
+                                <span class="array"> "React" , "Tailwind", "NextJS", 
+                                "HTML</span><span class="array">&#47;</span>
+                                <span class="array">css</span><span class="array">&#47;</span><span class="array">JS"</span>
                                 <span class="operator">&#93;</span>
                     </div>
                     <span class="operator">&#125;</span>
