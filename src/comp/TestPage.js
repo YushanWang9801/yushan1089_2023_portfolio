@@ -1,32 +1,35 @@
 import React from "react";
-import HeaderWang from "./HeaderWang";
 import  "./test.css";
 import { ReactComponent as Test } from "./test.svg";
 
+function TestIcon (){
+    return (
+        <div>
+            <a class="animated-arrow" href="https://google.com">
+                <span class="the-arrow -left">
+                <span class="shaft"></span>
+                </span>
+                <span class="main">
+                <span class="text">
+                    Discover the Agency
+                </span>
+                <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                </span>
+                </span>
+            </a>
+        </div>
+    )
+}
+
 function TestPage(){
-
-
     return (
         <div >
-			<HeaderWang />
 			<Test />
+            <TestIcon />
         </div>
     );
 }
 
-	// const setDarkTheme = () => {
-    //     document.querySelector("body").setAttribute("data-theme", "dark");
-    //     setDarkMode(true);
-    // };
-
-    // const setLightTheme = () => {
-    //     document.querySelector("body").setAttribute("data-theme", "light");
-    //     setDarkMode(false);
-    // };
-
-    // const toggleTheme = (e) => {
-    //     if (e.target.checked) setDarkTheme();
-    //     else setLightTheme();
-    // };
 
 export default TestPage;

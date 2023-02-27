@@ -9,29 +9,34 @@ import Footer from './comp/Footer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import TestPage from './comp/TestPage';
-import {useState} from "react";
+import {useEffect} from "react";
+import useLocalStorage from 'use-local-storage';
 
-const setDarkTheme = () => {
-  document.querySelector("body").setAttribute("data-theme", "dark");
-};
+// const setDarkTheme = () => {
+//   document.querySelector("body").setAttribute("data-theme", "dark");
+// };
 
-const setLightTheme = () => {
-    document.querySelector("body").setAttribute("data-theme", "light");
-};
+// const setLightTheme = () => {
+//     document.querySelector("body").setAttribute("data-theme", "light");
+// };
 
 function App() {
-  // const [darkMode, setDarkMode] = useState(false);
-  // if (darkMode) setLightTheme();
-  // else setDarkTheme();
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+  
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  }
 
-  // useEffect(() => {
-  //   document.querySelector("body").setAttribute("data-theme", theme);
-  // }, [theme]);
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
   return (
-    <div className="App">
+    <div className="App" >
       {/* <HeaderWang setDarkMode={setDarkMode} darkMode={darkMode}/> */}
-      <HeaderWang />
+      <HeaderWang switchTheme={switchTheme} theme={theme} />
       <Router>
         <Routes>
           <Route path="/" element={<Mainpage />} />

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import HeaderWang from './HeaderWang';
-import Footer from './Footer';
 import "../css/Project.css";
 
 import ProjectTitle from './Projects/ProjectTitle';

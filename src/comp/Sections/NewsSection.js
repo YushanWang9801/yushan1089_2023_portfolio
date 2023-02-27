@@ -17,7 +17,14 @@ const NewsSection = () => {
     return (
         <div className="newsSection">
             <div class="wrapper">
-                <h2><strong>Latest Posts</strong></h2>
+                <div className="news-title">
+                    <div className = "news-left">
+                        <h2><strong>Latest Posts</strong></h2>
+                    </div>
+                    <div className = "news-right">
+                        <TestIcon text={"Discover More Blogs"} link="blog" />
+                    </div>
+                </div>
 
                 <div class="news">
                     {
@@ -32,7 +39,16 @@ const NewsSection = () => {
                         ))
                     }
                 </div>
-                <h2><strong>Featured Projects<span>( 3 )</span></strong></h2>
+
+
+                <div className="news-title">
+                    <div className = "news-left">
+                        <h2><strong>Featured Projects<span>( 3 )</span></strong></h2>
+                    </div>
+                    <div className = "news-right">
+                        <TestIcon text={"My Recent Projects"} link="project" />
+                    </div>
+                </div>
                     <div class="cards">
                         {   
                             cards.map(card => (
@@ -44,7 +60,15 @@ const NewsSection = () => {
                         }
                     </div>
 
-                <h2><strong>Recent Gallery Updates</strong></h2>
+                    <div className="news-title">
+                    <div className = "news-left">
+                        <h2><strong>My Gallery</strong></h2>
+                    </div>
+                    <div className = "news-right">
+                        <TestIcon text={"See my latest Photos"} link="gallery" />
+                    </div>
+                </div>
+
                 <div className="recent-gallery">
                     <div className="gallerySection">
                         {
@@ -56,6 +80,27 @@ const NewsSection = () => {
             </div>
         </div>
     );
+}
+
+
+function TestIcon ({link, text}){
+    return (
+        <div>
+            <a class="animated-arrow" href={link} >
+                <span class="the-arrow -left">
+                <span class="shaft"></span>
+                </span>
+                <span class="main">
+                <span class="text">
+                    {text}
+                </span>
+                <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                </span>
+                </span>
+            </a>
+        </div>
+    )
 }
 
 export default NewsSection;
