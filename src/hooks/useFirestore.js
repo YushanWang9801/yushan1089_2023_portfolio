@@ -17,10 +17,10 @@ const useFirestore = (collection, category) => {
                             documents = documents.filter(element => {
                                 const isDuplicate = uniqueNames.includes(element.name);
                                 if (!isDuplicate) {
-                                uniqueNames.push(element.name);
+                                    uniqueNames.push(element.name);
                                     return true;
                                 } else {
-                                    deleteDoc(doc(projectFirestore, 'images', element.id));
+                                    deleteDoc(doc(projectFirestore, collection, element.id));
                                 }
                                 return false;
                             })

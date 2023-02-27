@@ -23,10 +23,10 @@ function BlogCard({blog}){
                 <div className="content">
                     <h3>{blog.short_desc}</h3>
                     <div calssName className="link">
-                            <span className="click">
+                            <a href={blog.url}><span className="click">
                                 Click to Read Article 
                                 <FontAwesomeIcon className="faicon" icon={faArrowRight} />
-                            </span>
+                            </span></a>
                     </div>
                 </div>
                 <div className="flap-left"  style={{ backgroundImage: `url(${img})`}}></div>

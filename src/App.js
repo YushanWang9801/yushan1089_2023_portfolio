@@ -2,23 +2,20 @@ import Blog from './comp/Blog';
 import Gallery from './comp/Gallery';
 import Project from "./comp/Project";
 import Mainpage from "./comp/Mainpage";
-import SingleBlog from './comp/Blog/SingleBlog';
 import AboutPage from './comp/AboutPage';
+
 import HeaderWang from './comp/HeaderWang';
 import Footer from './comp/Footer';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import TestPage from './comp/TestPage';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {useEffect} from "react";
 import useLocalStorage from 'use-local-storage';
 
-// const setDarkTheme = () => {
-//   document.querySelector("body").setAttribute("data-theme", "dark");
-// };
+import SingleBlog from './comp/Blog/SingleBlog';
+import SingleArticle from './comp/Blog/SingleArticle';
 
-// const setLightTheme = () => {
-//     document.querySelector("body").setAttribute("data-theme", "light");
-// };
+import blogs from "./comp/Blog/blogs-data.json";
+const blog = blogs[3];
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -45,7 +42,8 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="singleBlog" element={<SingleBlog />} />
           <Route path="me" element={<AboutPage />} />
-          <Route path="test" element={<TestPage />} />
+          <Route path="test" element={<SingleArticle blog={blog}/>} />
+          <Route path="love-letter" element={<SingleArticle blog={blog} category={"love-letter"}/>} />
         </Routes>
       </Router> 
       <Footer />

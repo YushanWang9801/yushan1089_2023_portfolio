@@ -1,6 +1,4 @@
 import React from 'react';
-import HeaderWang from '../HeaderWang';
-import Footer from '../Footer';
 import "./SingleBlog.css";
 
 import blogsData from "./blogs-data.json";
@@ -9,10 +7,8 @@ function SingleBlog () {
 
     return (
         <div className="SingleBlog">
-            <HeaderWang />
             <BlogTitle blog={blogsData[0]} />
-            <BlogContent content={blogsData[0].content}/>
-            <Footer />        
+            <BlogContent content={blogsData[0].content}/>    
         </div>
     );
 }
