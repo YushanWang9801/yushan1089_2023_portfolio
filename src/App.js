@@ -15,7 +15,6 @@ import SingleBlog from './comp/Blog/SingleBlog';
 import SingleArticle from './comp/Blog/SingleArticle';
 
 import blogs from "./comp/Blog/blogs-data.json";
-const blog = blogs[3];
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -32,20 +31,38 @@ function App() {
 
   return (
     <div className="App" >
-      {/* <HeaderWang setDarkMode={setDarkMode} darkMode={darkMode}/> */}
       <HeaderWang switchTheme={switchTheme} theme={theme} />
+
       <Router>
         <Routes>
           <Route path="/" element={<Mainpage />} />
           <Route path="project" element={<Project />} />
           <Route path="blog" element={<Blog />} />
           <Route path="gallery" element={<Gallery />} />
-          <Route path="singleBlog" element={<SingleBlog />} />
           <Route path="me" element={<AboutPage />} />
-          <Route path="test" element={<SingleArticle blog={blog}/>} />
-          <Route path="love-letter" element={<SingleArticle blog={blog} category={"love-letter"}/>} />
+          <Route path="test" element={<SingleBlog blog={blogs["VR_system"]}/>} />
+
+          {
+            Object.entries(blogs).map(([path, blog]) => {
+                if(blog.type === "article"){
+                  return (
+                    <Route path={path}
+                        element= {<SingleArticle blog={blog} />} />     
+                  )
+                } else {
+                  return (
+                    <Route path={path}
+                        element= {<SingleBlog blog={blog} />} />     
+                  )
+                }
+            })
+          }
         </Routes>
       </Router> 
+
+
+
+
       <Footer />
     </div>
   );

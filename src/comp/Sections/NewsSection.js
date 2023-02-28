@@ -5,7 +5,9 @@ import blogs from "./../Blog/blogs-data.json";
 import projects from "./../Projects/projects.json";
 import useFirestore from '../../hooks/useFirestore';
 
-const news = blogs.slice(1, 3);
+const getBlogs = [];
+Object.entries(blogs).map(([_, blog]) => (getBlogs.push(blog)));
+const news = getBlogs.slice(0,2);
 const cards = projects.slice(0, 3);
 
 const NewsSection = () => {

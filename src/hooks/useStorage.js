@@ -3,7 +3,7 @@ import{useState, useEffect} from 'react';
 import { projectStorage, projectFirestore, timestamp } 
                 from '../firebase/config';
 
-let tag_name = "";
+let tag_name = "VR-system";
 
 const useStorage = (file) => {
     const [progress, setProgress] = useState(0);

@@ -3,20 +3,17 @@ import "./SingleArticle.css";
 
 import useFirestore from '../../hooks/useFirestore';
 import {motion} from 'framer-motion';
-import {useState} from "react";
 
 function SingleArticle({blog}) {
 
-    const [category, setCategory] = useState("love-letter");
-
-    const {docs} = useFirestore('project-images', category);
+    const {docs} = useFirestore('project-images', blog.tag);
 
     var articles = [];
     for (var i = 1; i < blog.content.length ; i++) {
-        if(i < docs.length) {
+        if(docs && i < docs.length) {
             articles.push(
                     <motion.img 
-                    src={docs[i].url} alt="love-letter-montage"
+                    src={docs[i].url} alt={blog.imgalt}
                     initial={{opacity: 0}} animate={{opacity: 1}}
                     transition={{delay:1}}/>);
         }
@@ -31,7 +28,7 @@ function SingleArticle({blog}) {
             <main>
                 <article>
                         <header>
-                            <img src={`${blog.coverImage}`} alt="" />
+                            {<img src={`${blog.coverImage}`} alt={blog.imgalt} />}
                         </header>
                     <div class="multicol">
                         <h1>{blog.name}</h1>

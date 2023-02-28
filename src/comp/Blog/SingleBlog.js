@@ -1,36 +1,43 @@
 import React from 'react';
 import "./SingleBlog.css";
+import useFirestore from '../../hooks/useFirestore';
 
-import blogsData from "./blogs-data.json";
+function SingleBlog ({blog}) {
+    const {docs} = useFirestore('project-images', blog.tag);
+    const images = docs;
 
-function SingleBlog () {
+    var articles =[];
+    var j = 0;
+    for (var i = 0; i < blog.content.length; i++){
+        if (blog.content[i].type === "title"){
+            articles.push(<h3>{blog.content[i].content}</h3>)
+        } else if (blog.content[i].type === "text"){
+            articles.push(<p>{blog.content[i].content}</p>)
+        } else if (blog.content[i].type === "image"){
+            if(j < images.length){
+                articles.push(<div className="article-image">
+                                <img src={docs[j].url} />
+                                </div>);
+                j++;
+            }
+        } else if (blog.content[i].type === "subtitle"){
+            articles.push(<h4>{blog.content[i].content}</h4>)
+        }
+    }
+
 
     return (
         <div className="SingleBlog">
-            <BlogTitle blog={blogsData[0]} />
-            <BlogContent content={blogsData[0].content}/>    
-        </div>
-    );
-}
-
-function BlogTitle ({blog}) {
-    return (
-        <div className='BlogTitle'>
-            <h1>{blog.title}</h1>
-            <img src={`${blog.coverImage}`} alt="coverImage" />
-            <div className='BlogSubtitle'>
-                <h2>{blog.subtitle}</h2>
-            </div>
-        </div>
-    );
-}
-
-function BlogContent ({content}) {
-    return (
-        <div className="BlogContent">
-            {content.map(data => (
-                <div className="blog-paragraph">{data.content}</div>
-            ))}
+            <main>
+                <section>
+                    <img src={`${blog.coverImage}`} alt={blog.imgalt} />
+                    <h2>{blog.title}</h2>
+                    <div class="h1-divider"></div>
+                    <article>
+                        {articles}
+                    </article>
+                </section>
+            </main>
         </div>
     );
 }

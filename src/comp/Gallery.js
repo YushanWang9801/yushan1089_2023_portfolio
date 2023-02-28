@@ -4,7 +4,7 @@ import {useState} from 'react';
 import Modal from './Galllery/Modal';
 import GalleryTitle from './Galllery/GalleryTitle';
 import ImageGrid from './Galllery/ImageGrid';
-// import UploadForm from './Galllery/UploadForm';
+import UploadForm from './Galllery/UploadForm';
 
 function Gallery(){
     const [selectedImg, setSelectedImg] = useState(null); 
@@ -12,7 +12,7 @@ function Gallery(){
     return (
       <div className="Gallery">
         <GalleryTitle />
-        {/* <UploadForm /> */}
+        <UploadForm />
         <ImageGrid setSelectedImg={setSelectedImg}/>
         { selectedImg && (
           <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />

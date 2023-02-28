@@ -6,9 +6,10 @@ import blogs from "./blogs-data.json";
 function BlogGrid () {
     return (
         <div className="Blog-grid">
-                {blogs.map(blog => (
-                    <BlogCard blog={blog}/>
-                ))}
+                {Object.entries(blogs)
+                        .map(([_, blog]) => (
+                        <BlogCard blog={blog}/>
+                        ))}
         </div>
     );
 }
