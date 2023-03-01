@@ -8,6 +8,7 @@ import HeaderWang from './comp/HeaderWang';
 import Footer from './comp/Footer';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import {useEffect} from "react";
 import useLocalStorage from 'use-local-storage';
 
