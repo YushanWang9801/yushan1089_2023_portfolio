@@ -7,7 +7,7 @@ import AboutPage from './comp/AboutPage';
 import HeaderWang from './comp/HeaderWang';
 import Footer from './comp/Footer';
 
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import {useEffect} from "react";
 import useLocalStorage from 'use-local-storage';
@@ -33,10 +33,8 @@ function App() {
   return (
     <div className="App" >
       <HeaderWang switchTheme={switchTheme} theme={theme} />
-
-      <Router>
+      <Router >
         <Routes>
-          <Route path="/" element={<Mainpage />} />
           <Route path="/project" element={<Project />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/gallery" element={<Gallery />} />
@@ -58,6 +56,7 @@ function App() {
                 }
             })
           }
+          <Route path="/" element={<Mainpage />} />
         </Routes>
       </Router> 
 

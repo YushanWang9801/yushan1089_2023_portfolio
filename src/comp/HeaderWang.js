@@ -1,6 +1,7 @@
 import React from 'react';
 import "./../css/HeaderWang.css";
 // import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 const HeaderWang = ({switchTheme, theme}) => {
 
@@ -8,10 +9,10 @@ const HeaderWang = ({switchTheme, theme}) => {
         <div className="HeaderWang">
             <a href="/"><h1>YushanWang9801</h1> </a>   
             <nav className="navbar">
-                <a href="project">Projects</a>
-                <a href="blog">Blogs</a>
-                <a href="gallery">Gallery</a>
-                <a href="me" id="Me">Me</a>
+                <a as={Link} href="project">Projects</a>
+                <a as={Link} href="blog">Blogs</a>
+                <a as={Link} href="gallery">Gallery</a>
+                <a as={Link} href="me" id="Me">Me</a>
             </nav>
             <div className='dark_mode'>
                 <input
