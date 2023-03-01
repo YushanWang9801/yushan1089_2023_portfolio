@@ -37,22 +37,22 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Mainpage />} />
-          <Route path="project" element={<Project />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="me" element={<AboutPage />} />
-          <Route path="test" element={<SingleBlog blog={blogs["VR_system"]}/>} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/me" element={<AboutPage />} />
+          <Route path="/test" element={<SingleBlog blog={blogs["VR_system"]}/>} />
 
           {
             Object.entries(blogs).map(([path, blog]) => {
                 if(blog.type === "article"){
                   return (
-                    <Route path={path}
+                    <Route path={`/${path}`}
                         element= {<SingleArticle blog={blog} />} />     
                   )
                 } else {
                   return (
-                    <Route path={path}
+                    <Route path={`/${path}`}
                         element= {<SingleBlog blog={blog} />} />     
                   )
                 }
