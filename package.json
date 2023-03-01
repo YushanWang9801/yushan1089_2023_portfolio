@@ -1,7 +1,7 @@
 {
-  "name": "react-portfolio-2",
+  "name": "yushan1089-website",
   "version": "0.1.0",
-  "homepage": "https://yushan1089.github.io/",
+  "homepage": "https://yushan1089.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -15,6 +15,7 @@
     "bootstrap-icons": "^1.10.3",
     "firebase": "^9.17.1",
     "framer-motion": "^9.0.2",
+    "gh-pages": "^5.0.0",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
